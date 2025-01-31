@@ -80,9 +80,9 @@ test:
 #
 production:
   primary: &primary_production
-  <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
-  database: rails_neon_blog_production
+    <<: *default
+    url: <%= ENV['DATABASE_URL'] %>
+    database: rails_neon_blog_production
     username: rails_neon_blog
     password: <%= ENV["RAILS_NEON_BLOG_DATABASE_PASSWORD"] %>
   cache:
